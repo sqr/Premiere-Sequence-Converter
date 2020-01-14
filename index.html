@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sequence Converter</title>
+		<script src="./lib/CSInterface.js"></script>		
+		<script type="text/javascript">
+			
+			function run1x1() {
+				var cs = new CSInterface;		
+				cs.evalScript('$.runScript.run1x1()')
+			
+			}
+			function run9x16() {
+				var cs = new CSInterface;
+				cs.evalScript('$.runScript.run9x16()')
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>		
+		<div>
+			<button class="button" id="runButton" type="run" onclick="run1x1()">Convert to 1x1</button> <br>
+			<button class="button" id="runButton" type="run" onclick="run9x16()">Convert to 9x16</button>
+		</div>	
+	</body>
+</html>
